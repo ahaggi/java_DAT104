@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Forms and input examples</title>
+</head>
+<body>
+	<form action="processInput" method="get">
+		<fieldset>
+			<legend>submit</legend>
+			<p>
+				<input type="submit" value="Send data" />
+			</p>
+		</fieldset>
+	</form>
+
+	<form action="processInput" method="get">
+		<fieldset>
+			<legend>hidden</legend>
+			<p>
+				<input type="hidden" name="aHiddenValue" value="hokuspokus" />
+			</p>
+			<p>
+				<input type="submit" value="Send data" />
+			</p>
+		</fieldset>
+	</form>
+
+	<form action="processInput" method="post">
+		<fieldset>
+			<legend>text</legend>
+			<p>
+				Fornavn: <input type="text" name="fornavn" />
+			</p>
+			<p>
+				Etternavn: <input type="text" name="etternavn" />
+			</p>
+			<p>
+				<input type="submit" value="Send data" />
+			</p>
+		</fieldset>
+	</form>
+
+	<form action="processInput" method="get">
+		<fieldset>
+			<legend>password</legend>
+			<p>
+				Secret1: <input type="password" name="secret1" />
+			</p>
+			<p>
+				Secret2: <input type="password" name="secret2" />
+			</p>
+			<p>
+				<input type="submit" value="Send data" />
+			</p>
+		</fieldset>
+	</form>
+
+	<form action="processInput" method="get">
+		<fieldset>
+			<legend>textarea</legend>
+			<textarea autocomplete="off" id="textareaCode" spellcheck="false"
+				;" wrap="logical">
+</textarea>
+			<p>
+				<input type="submit" value="Send data" />
+			</p>
+		</fieldset>
+	</form>
+
+	<form action="processInput" method="get">
+		<fieldset>
+			<legend>radio</legend>
+			<p>
+				<input type="radio" name="language" value="Java" checked="checked" />Java
+				<input type="radio" name="language" value="C++" />C++ <input
+					type="radio" name="language" value="C#" />C# <input type="radio"
+					name="language" value="Smalltalk" />Smalltalk
+			</p>
+			<p>
+				<input type="submit" value="Send data" />
+			</p>
+		</fieldset>
+	</form>
+
+	<form action="processInput" method="get">
+		<fieldset>
+			<legend>Din favorittfrukt</legend>
+			<p>
+				<input type="radio" name="fruit" value="Eple" />Eple<br /> <input
+					type="radio" name="fruit" value="Pære" />Pære<br /> <input
+					type="radio" name="fruit" value="Kiwi" />Kiwi<br /> <input
+					type="radio" name="fruit" value="Banan" />Banan<br />
+			</p>
+			<p>
+				<input type="submit" value="Stem" />
+			</p>
+		</fieldset>
+	</form>
+
+	<form action="processInput" method="get">
+		<fieldset>
+			<legend>select</legend>
+			<select name="language">
+				<option value="Java" selected="selected">Java</option>
+				<option value="C++">C++</option>
+				<option value="C#">C#</option>
+				<option value="Smalltalk">Smalltalk</option>
+			</select>
+			<p>
+				<input type="submit" value="Send data" />
+			</p>
+		</fieldset>
+	</form>
+
+	<form action="processInput" method="get">
+		<fieldset>
+			<legend>checkbox</legend>
+			<p>
+				<input type="checkbox" name="language" value="Java" />Java <input
+					type="checkbox" name="language" value="C++" />C++ <input
+					type="checkbox" name="language" value="C#" />C# <input
+					type="checkbox" name="language" value="Smalltalk" />Smalltalk
+			</p>
+			<p>
+				<input type="submit" value="Send data" />
+			</p>
+		</fieldset>
+	</form>
+
+	<form action="processInput" method="get">
+		<fieldset>
+			<legend>HTML5 auto-validert date, email og url</legend>
+			<p>
+				<input type="date" name="someDate" /> A date
+			</p>
+			<p>
+				<input type="email" name="someEmail" /> An email
+			</p>
+			<!--  <p><input type="url" name="someUrl" /> A URL</p>  -->
+			<p>
+				<input type="submit" value="Send data" />
+			</p>
+		</fieldset>
+	</form>
+
+	<form action="processInput" method="get">
+		<fieldset>
+			<legend>image</legend>
+			<p>
+				<input type="image" src="http://www.w3schools.com/tags/colormap.gif"
+					name="thaImage" />
+			</p>
+		</fieldset>
+	</form>
+
+	<p>
+		image: Alternativ submit-knapp der man bruker et bilde.<br>
+		button: Alternativ submit-knapp der man kan styre utseende.<br>
+		file: For filopplasting. Tar evt. senere.<br>
+	</p>
+
+	<form action="processInput" method="get">
+		<fieldset>
+			<legend>Valutagreier</legend>
+			<p>
+				Beløp: <input type="text" name="amount" /> <select
+					name="fromCurrency">
+					<option value="NOK" selected="selected">NOK</option>
+					<option value="USD">USD</option>
+					<option value="EUR">EUR</option>
+				</select>
+			</p>
+			Skal veksles til:<select name="toCurrency">
+				<option value="EUR" selected="selected">EUR</option>
+				<option value="NOK">NOK</option>
+				<option value="USD">USD</option>
+			</select>
+			<p>
+				<input type="submit" value="Beregn" />
+			</p>
+		</fieldset>
+	</form>
+
+
+
+</body>
+</html>

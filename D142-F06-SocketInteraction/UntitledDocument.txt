@@ -1,0 +1,9 @@
+To make a bash script that will cd to a select directory :
+Create the script file
+#!/bin/sh
+# file : /scripts/cdjava
+#
+cd /home/askgelal/projects/java
+Then create an alias in your startup file.
+#!/bin/sh
+# file /scripts/mastercode.sh

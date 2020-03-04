@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:web="http://java.sun.com/xml/ns/javaee" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Obl1 - Servlets - Losning 2014 - OK</display-name>
+  <context-param>
+    <param-name>persistensenhet</param-name>
+    <param-value>meldinger_unit</param-value>
+  </context-param>
+  <servlet>
+    <servlet-name>MeldingerServlet</servlet-name>
+    <servlet-class>no.hib.dat104.MeldingerServlet</servlet-class>
+    <init-param>
+      <param-name>visningsantall</param-name>
+      <param-value>3</param-value>
+    </init-param>
+  </servlet>
+</web-app>

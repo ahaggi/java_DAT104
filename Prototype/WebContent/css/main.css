@@ -1,0 +1,31 @@
+body {
+    background: #fff;
+}
+
+/* Layout
+***************************************/
+
+.container--login {
+    max-width: 20rem;
+    margin: 0 auto;
+    margin-top: 20vh;
+}
+
+.measure {
+    min-height: 100vh;
+    border-left: thin solid rgba(216,216,216,.99);
+    border-right: thin solid rgba(216,216,216,.99);
+}
+
+/* Form
+***************************************/
+
+input[type="radio"] {
+    display: inline-block;
+    width: auto;
+    margin-right: 0.75rem;
+}
+
+.question > h5 {
+    margin-bottom: 0.5rem;
+}

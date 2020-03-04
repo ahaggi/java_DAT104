@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Frukt stemme</title>
+</head>
+<body onload="check()">
+	<form action="stemme" method="post">
+		<fieldset>
+			<legend>Favorittfrukt</legend>
+			
+			<p>
+				Eple<input type="radio" name="valg" value="Eple"  onclick="check()"  />
+				
+			<br>
+				Pære<input type="radio" name="valg" value="Pare" onclick="check()" />
+			<br>
+ 				Kiwi<input type="radio" name="valg" value="Kiwi" onclick="check()"/>
+			<br>
+ 				Banan<input type="radio" name="valg" value="Banan"  onclick="check()"/>
+			<br>
+ 				Appelsin<input type="radio" name="valg" value="Appelsin"  onclick="check()"/>
+			</p>
+			<p>
+				<input type="submit" value="stem" id='stem' disabled="disabled"/>
+			</p>
+		</fieldset>
+	</form>
+
+
+
+<script>
+	function check() {
+		var radios = document.getElementsByName('valg');
+		var flag=0;
+		
+		for (var i = 0; i < radios.length && flag==0; i++) {
+			if (radios[i].checked)
+				 flag=1;
+		}
+		
+		document.getElementById('stem').disabled=(flag==0)?true:false;
+	}
+</script>
+
+</body>
+</html>
+

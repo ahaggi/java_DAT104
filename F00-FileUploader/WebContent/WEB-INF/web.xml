@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:web="http://java.sun.com/xml/ns/javaee" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Oving2_Handleliste</display-name>
+  <welcome-file-list>
+    <welcome-file>upload</welcome-file>
+  </welcome-file-list>
+  <context-param>
+    <description>Location to store uploaded file</description>
+    <param-name>uploadFolder</param-name>
+    <param-value>
+         D:\Eclipse-workSpaces\DAT104\F00-FileUploader\data\
+     </param-value>
+  </context-param>
+  <context-param>
+    <description>Location to temp. store uploaded file</description>
+    <param-name>tempFolder</param-name>
+    <param-value>
+         /home/haji/Desktop/apache-tomee-plus-7.0.2/temp/
+     </param-value>
+  </context-param>
+</web-app>

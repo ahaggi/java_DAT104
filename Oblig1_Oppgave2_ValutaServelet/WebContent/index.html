@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="result" method="get">
+		<fieldset>
+			<legend>select</legend>
+			<p>
+				Beløp: <input type="text" name="amount" /> 
+				<select name="source">
+					<option value="GBP" >GBP</option>
+					<option value="USD">USD</option>
+					<option value="EUR">EUR</option>
+					<option value="NOK" selected="selected">NOK</option>
+				</select>
+			</p>
+			<p>
+				Skal vaksles til: 
+				<select name="target">
+					<option value="GBP" selected="selected">GBP</option>
+					<option value="USD">USD</option>
+					<option value="EUR">EUR</option>
+					<option value="NOK">NOK</option>
+					</select> 
+			</p>
+			<p>
+				<input type="submit" value="Beregn" />
+</p>
+		</fieldset>
+	</form>
+
+
+</body>
+</html>
